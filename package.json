@@ -1,0 +1,30 @@
+{
+  "name": "openlemmy",
+  "version": "0.1.0",
+  "description": "OpenLemmy is an implementation of the upstream LemmyNet project.",
+  "main": "./src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openlemmy/openlemmy.git"
+  },
+  "keywords": [
+    "openlemmy",
+    "lemmy",
+    "usenet"
+  ],
+  "author": "Brett Wilcox",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/openlemmy/openlemmy/issues"
+  },
+  "homepage": "https://github.com/openlemmy/openlemmy#readme",
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
