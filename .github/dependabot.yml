@@ -5,17 +5,38 @@
 
 version: 2
 updates:
+  # Terraform
   - package-ecosystem: terraform # See documentation for possible values
     directory: "/terraform/do" # Location of package manifests
     schedule:
       interval: "daily"
     target-branch: "dev"
     commit-message:
-      prefix: "fix (deps)"
+      prefix: "Fix TF (deps)"
 
+  # Docker
+  - package-ecosystem: docker # See documentation for possible values
+    directory: "/docker" # Location of package manifests
+    schedule:
+      interval: "daily"
+    target-branch: "dev"
+    commit-message:
+      prefix: "Fix Docker (deps)"
+
+  # NPM
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    target-branch: "dev"
+    commit-message:
+      prefix: "Fix NPM (deps)"
+
+  # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    target-branch: "dev"
     commit-message:
-      prefix: "fix (deps)"
+      prefix: "Fix GHA (deps)"

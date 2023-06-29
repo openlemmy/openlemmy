@@ -16,15 +16,15 @@ Architecture overview for OpenLemmy.
 
 Requirements
 
-1. [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Podman Desktop/Rancher Desktop in testing).
-2. [Terraform](https://www.terraform.io/downloads.html).
+1. [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Podman Desktop/Rancher Desktop in testing)
+2. [Terraform](https://www.terraform.io/downloads.html)
 3. [NodeJS](https://nodejs.org/en/download)
 
 ### 🐳 Docker
 
 This will create an OpenLemmy instance on your local computer or server for development purposes.
 
-```
+```bash
 # Start OpenLemmy
 docker compose up -d
 ```
