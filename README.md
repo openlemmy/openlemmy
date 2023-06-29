@@ -2,7 +2,7 @@
 
 OpenLemmy is an implementation of the upstream [LemmyNet](https://github.com/LemmyNet/) project.
 
-The purpose of this project is to create a cohesive distribution of Lemmy. The intent is to provide easy deployment and customization for any Lemmy instance. Developer documentation and onboarding will be the starting focus of this project.
+The purpose of this project is to create an easy to use containerized distribution of Lemmy. Easy deployment and customization for any Lemmy instance is our goal. Developer documentation and onboarding will be the starting focus of this project.
 
 ## 📐 OpenLemmy Architecture
 
@@ -24,6 +24,8 @@ Requirements
 
 This will create an OpenLemmy instance on your local computer or server for development purposes.
 
+##### Start OpenLemmy
+
 ```bash
 # Start OpenLemmy
 docker compose up -d
@@ -31,8 +33,14 @@ docker compose up -d
 
 Visit [http://localhost:80](http://localhost:80) on you computer. NGINX is listening on `port 80` by default.
 
-Username: `admin`
-Password: `secret`
+> **Username**: `admin` > **Password**: `secret`
+
+##### Stop and kill
+
+```bash
+docker compose stop # Stop OpenLemmy
+docker compose down # Remove containers
+```
 
 ### 🌱 Terraform
 
