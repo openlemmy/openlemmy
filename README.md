@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/openlemmy/openlemmy/main/docs/images/logo.svg" alt="OpenLemmy" height="55px"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/openlemmy/openlemmy/main/docs/img/logo.svg" alt="OpenLemmy" height="55px"/></p>
 
 [OpenLemmy](https://github.com/openlemmy/openlemmy) is an implementation of the upstream [LemmyNet](https://github.com/LemmyNet/) project.
 
