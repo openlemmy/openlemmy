@@ -1,1 +1,39 @@
+# mkdocs for OpenLemmy
+# https://www.mkdocs.org/user-guide/configuration/
 site_name: OpenLemmy
+site_description: Project documentation for OpenLemmy.
+site_author: OpenLemmy Team
+
+extra:
+  version: 0.1.0
+  generator: false
+
+repo_url: https://github.com/openlemmy/openlemmy/
+edit_uri: blob/main/docs/
+
+theme:
+  name: readthedocs
+  logo: /img/logo.png
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+
+copyright: OpenLemmy
+
+extra_css:
+  - css/custom.css
+
+nav:
+  - Home: README.md
+  - 🐁 OpenLemmy:
+      - Getting Started: openlemmy/README.md
+  - 🐳 Docker:
+      - Config: docker/README.md
+  - 🌱 Terraform:
+      - Getting Started: terraform/README.md
+      - State: terraform/STATE.md
+      - Workspaces: terraform/WORKSPACES.md
+  - 🙋 About:
+      - Contributing: about/CONTRIBUTING.md
+      - License: about/LICENSE.md
