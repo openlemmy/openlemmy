@@ -33,7 +33,8 @@ docker compose up -d
 
 Visit [http://localhost:80](http://localhost:80) on you computer. NGINX is listening on `port 80` by default.
 
-> **Username**: `admin` > **Password**: `secret`
+> **Username**: `admin`
+> **Password**: `secret`
 
 ##### Stop and kill
 
