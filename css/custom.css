@@ -1,0 +1,16 @@
+
+.wy-side-nav-search {
+    background-color: #0f111a;
+}
+
+.wy-nav-side {
+    background: #282931;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #090b10;
+}
+
+.rst-versions .rst-current-version {
+    background-color: #0f111a;
+}
