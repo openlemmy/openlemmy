@@ -25,7 +25,6 @@ services:
       # Note, change the left number if port 1236 is already in use on your system
       # You could use port 80 if you won't use a reverse proxy
       - "80:1236"
-      - "8536:8536"
     volumes:
       - ./docker/nginx/config/nginx.conf:/etc/nginx/nginx.conf:ro,Z
     restart: always
@@ -35,7 +34,7 @@ services:
     logging: *default-logging
 
   lemmy:
-    image: dessalines/lemmy:0.17.4
+    image: dessalines/lemmy:0.18.1
     # use this to build your local lemmy server image for development
     # run docker compose up --build
     #build:
@@ -60,7 +59,7 @@ services:
     logging: *default-logging
 
   lemmy-ui:
-    image: dessalines/lemmy-ui:0.17.1
+    image: dessalines/lemmy-ui:0.18.1
     # use this to build your local lemmy ui image for development
     # run docker compose up --build
     # assuming lemmy-ui is cloned besides lemmy directory
@@ -73,7 +72,7 @@ services:
       # this needs to match the hostname defined in the lemmy service
       - LEMMY_UI_LEMMY_INTERNAL_HOST=lemmy:8536
       # set the outside hostname here
-      - LEMMY_UI_LEMMY_EXTERNAL_HOST=localhost:1236
+      - LEMMY_UI_LEMMY_EXTERNAL_HOST=localhost:8536
       - LEMMY_HTTPS=false
       - LEMMY_UI_DEBUG=true
     depends_on:
@@ -83,7 +82,7 @@ services:
     init: true
 
   pictrs:
-    image: asonix/pictrs:0.4.0-beta.19
+    image: asonix/pictrs:0.4.0-rc.14
     # this needs to match the pictrs url in lemmy.hjson
     hostname: pictrs
     # we can set options to pictrs like this, here we set max. image size and forced format for conversion
